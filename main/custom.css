@@ -1,0 +1,258 @@
+@charset "UTF-8";
+ 
+.masthead {
+	background:inherit;
+	background-color: #d31421;
+}
+
+.tying{
+	color : white;
+	font-weight: bold;
+	display:inline; 
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+.blink{
+	animation: blink 1s infinite;
+	display:inline; 
+}
+
+.text-container {
+	position: relative;
+	font-weight: bold; 
+	color: white;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	transform: translateY(-200px) scale(1.5);
+	font-size: 10vw;
+}
+
+.letter{
+	position:absolute;
+	text-align: left;
+	top: 0px; 
+	left: 0px;
+	width: 80vw;
+	font-size : 30px;
+}
+
+.main_bg{
+	margin-left: 600px;
+	height: 900px;	 
+}
+
+
+.fade-in-image {
+	opacity: 0; /* 초기 투명 상태 */
+	transform: scale(1); /* 살짝 축소된 상태 */
+	animation: fadeIn 4s ease-out forwards;
+}
+
+
+@media(min-width:0px){ 
+ 
+	.letter { 
+		top: -50px;
+		left: 20px;
+	}
+	.main_bg {
+		margin-left: -50px;
+		height: 500px;
+	}
+	.masthead{
+		padding-bottom: 25px;
+	}
+	 
+}
+ 
+@media(min-width:576px){ 
+	 
+	.letter { 
+		top: -50px;
+		left: 20px;
+	}
+	.main_bg {
+		margin-left: 0px;
+		height: 600px;
+	}
+
+	.masthead{
+		padding-bottom: 30px;
+	}
+	 
+} 
+
+@media(min-width:768px){ 
+	.letter{
+		top: 0%;
+		left: 5%;
+	} 
+	.main_bg{
+		margin-left: -50px;
+		height: 800px;
+	}
+	.masthead{
+		padding-bottom: 40px;
+	}
+}
+
+@media(min-width:992px){ 
+	.letter{
+		top: 50%; 
+		left: 0%;
+	} 
+	.main_bg{
+		margin-left: 100px;
+		height: 900px;	 
+	}
+
+ 
+}
+
+ 
+@media(min-width:1200px){ 
+	.letter {
+		top: 40%; 
+		left: 0%;
+		width: 600px;
+	} 
+	.main_bg {
+		margin-left: 30vw;
+		height: 94vh;	 
+	}
+}
+ 
+
+.icon{
+	width : 40px;
+	height: 40px;
+	border-radius:50%;
+	margin-right : 20px;
+	filter: grayscale(100%);
+}
+
+.effect {
+	animation: fall 1s cubic-bezier(0.3, 1.5, 0.3, 1) forwards
+} 
+
+.about-section{
+	padding: 10rem 0;
+	background: #a16468;
+}
+
+
+.about-section .form-address div{
+	margin-bottom: 10px;
+}
+
+.allocation-section{
+	background-color: #adb5bd;
+	padding: 20px 0;
+}
+
+.allocation-section p{
+	text-align: left;
+}
+
+.allocation-section canvas{
+	margin-bottom: 30px;
+}
+
+
+.form-address p{
+	color: #cecece;
+}
+
+.submitButton{
+	margin-right: 5px;
+}
+
+.faq-section{
+	padding: 10rem 0;
+    background: #64a19d;
+}
+
+.accordion-body{
+	text-align: left;
+}
+
+.pull-right{
+	float: right;
+}
+
+.sns_icon{
+	margin-right: 3px;
+}
+
+.img-fluid{
+	width: 612px; 
+}
+
+.strong{
+	font-weight: bold;
+}
+
+.accordion-button{
+	font-weight: bold;
+}
+
+.btn-xs{
+	padding: 0.4rem 0.5rem;
+}
+
+.faq-section h4{
+	font-weight: 800;
+	text-align: left;
+}
+.faq-section p{
+	text-align: left;
+}
+
+.primary{
+	color: #64a19d;
+	font-weight: bold;
+}
+
+.info{
+	color: #1cabc4;
+	font-weight: bold;
+}
+
+@keyframes blink {
+  to {
+	opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+}
+
+@keyframes fall {
+	0% {
+		opacity: 0;
+		transform: translateY(-200px) scale(2);
+	}
+	50% {
+		opacity: 1;
+	}
+	80% {
+		transform: translateY(0) scale(1);
+	}
+	90% {
+		transform: translateY(-10px) scale(1.05);
+	}
+	100% {
+		transform: translateY(0) scale(1);
+	}
+}
+
+
+ 
