@@ -2,7 +2,16 @@
  
 .masthead {
 	background:inherit;
-	background-color: #d31421;
+	/*background-color: #d31421;*/
+
+	
+	background: linear-gradient(#e74c3c, #c0392b);
+
+	/*
+	#e74c3c (부드러운 빨강, 토마토 색 느낌)
+	#ff6b6b (살짝 연한 코랄 레드)
+	#c0392b (딥 레드, 덜 자극적이면서 고급스러운 느낌)
+	*/
 }
 
 .tying{
@@ -103,7 +112,7 @@
 	} 
 	.main_bg{
 		margin-left: 100px;
-		height: 900px;	 
+		height: 973px;	 
 	}
 
  
@@ -118,7 +127,7 @@
 	} 
 	.main_bg {
 		margin-left: 30vw;
-		height: 94vh;	 
+		height: 973px;	 
 	}
 }
  
@@ -216,6 +225,26 @@
 .info{
 	color: #1cabc4;
 	font-weight: bold;
+}
+
+
+#othercompetitors{
+	padding-bottom: 50px;
+}
+
+#OtherOne{
+	width: 90%;
+	margin: 30px auto;
+}
+
+#OtherTwo{ 
+	width: 75%;
+	margin: 30px auto; 
+}
+
+#OtherThree{
+	width: 60%;
+	margin: 30px auto;
 }
 
 @keyframes blink {

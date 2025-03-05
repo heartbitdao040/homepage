@@ -1,7 +1,7 @@
 let frame = 0;
 let interval;
 let txtIdx = 0;
-const word = ["WELCOME", "TO", "THE", "MOON~~~", "SOO~~~"];
+const word = ["THE", "PEOPLE", "WIN", "MOONSOO"];
 const description = "He is..... right, right and only right.\nWe pay tribute to him";
 
 
