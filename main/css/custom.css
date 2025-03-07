@@ -11,9 +11,11 @@
 	#e74c3c (부드러운 빨강, 토마토 색 느낌)
 	#ff6b6b (살짝 연한 코랄 레드)
 	#c0392b (딥 레드, 덜 자극적이면서 고급스러운 느낌)
+	#D4A5A5 (더스티 로즈)
+	#895558 (디폴트 레드)
 	*/
 
-	background: linear-gradient(to bottom, rgba(211, 20, 33, 0.7) 0%, rgba(211, 20, 33, 0.9) 75%, #000 100%);
+	background: linear-gradient(to bottom, rgba(137, 85, 88, 0.7) 0%, rgba(137, 85, 88, 0.9) 75%, #000 100%);
 	background-size: cover;
 }
 
