@@ -10,6 +10,7 @@ $(document).ready(function(){
 		animation();
 	}, 1000);
 
+	/*
 	const ctx = document.getElementById('allocate');
 
 	new Chart(ctx, {
@@ -17,8 +18,10 @@ $(document).ready(function(){
 		data: data,
 	  },
 	);
+	*/
 });
 
+/*
 const data = {
 	labels: [
 	  'DAO',
@@ -36,7 +39,8 @@ const data = {
 	  ],
 	  hoverOffset: 4
 	}]
-  };
+};
+*/
 
 function clipboardCopy(){
 	const copy = $("#Solana_Contract_Address").val(); 

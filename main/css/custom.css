@@ -15,7 +15,10 @@
 	#895558 (디폴트 레드)
 	*/
 
-	background: linear-gradient(to bottom, rgba(137, 85, 88, 0.7) 0%, rgba(137, 85, 88, 0.9) 75%, #000 100%);
+	/*background: linear-gradient(to bottom, rgba(137, 85, 88, 0.7) 0%, rgba(137, 85, 88, 0.9) 75%, #000 100%)*/
+
+	/*#e74c3c, #d31421*/
+	background: linear-gradient(to bottom, rgba(231, 76, 60, 0.9) 0%, rgba(211, 20, 33, 0.9) 50%, #000 100%);
 	background-size: cover;
 }
 
@@ -29,11 +32,11 @@
 	opacity: 0.15;
   }
   
-  .bg-video__content {
+.bg-video__content {
 	height: 100%;
 	width: 100%;
 	object-fit: cover; 
-  }
+}
 
 .tying{
 	color : white;
@@ -77,6 +80,7 @@
 	transform: scale(0.9); /* 살짝 축소된 상태 */
 	animation: fadeIn 4s ease-out forwards;
 }
+
 
 
 @media(min-width:0px){ 
@@ -173,8 +177,9 @@
 	margin-bottom: 10px;
 }
 
+
 .allocation-section{
-	background-color: #adb5bd;
+	background-color: #fcf5f3;
 	padding: 20px 0;
 }
 
@@ -182,10 +187,18 @@
 	text-align: left;
 }
 
+
 .allocation-section canvas{
 	margin-bottom: 30px;
 }
 
+
+.allocation_distribution-video {
+	position: static; 
+	width: 100%;
+	background-image: url(./assets/img/token_distribution.png);
+}
+  
 
 .form-address p{
 	color: #cecece;
