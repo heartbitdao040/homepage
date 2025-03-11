@@ -1,7 +1,7 @@
 let frame = 0;
 let interval;
 let txtIdx = 0;
-const word = ["THE", "PEOPLE", "WIN", "MOONSOO"];
+const word = ["THE", "PEOPLE", "WIN"];
 const description = "He is..... right, right and only right.\nWe pay tribute to him";
 
 
@@ -41,6 +41,12 @@ const data = {
 	}]
 };
 */
+
+
+function goto(link){
+	window.open(link);
+	return false;
+}
 
 function clipboardCopy(){
 	const copy = $("#Solana_Contract_Address").val(); 

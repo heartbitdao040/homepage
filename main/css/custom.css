@@ -1,5 +1,52 @@
 @charset "UTF-8";
  
+.body {
+	font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#mainNav .navbar-brand{
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+#mainNav .nav-link{
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+h2, .h2 {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+h4, .h4{
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+@media (min-width: 992px) {
+	#mainNav .navbar-brand {
+	  padding: 0.5rem 0;
+	  color: rgba(255, 255, 255);
+	}
+  }
+
+  @media (min-width: 992px) {
+	#mainNav .nav-link:hover {
+	  color: rgba(255, 255, 255, 1);
+	}
+  }
+  @media (min-width: 992px) {
+	#mainNav .nav-link {
+	  transition: none;
+	  padding: 2rem 1.5rem;
+	  color: rgba(255, 255, 255, 1);
+	}
+  }
+
+ 
+
 .masthead {
 	background:inherit;
 	/*background-color: #d31421;*/
@@ -81,7 +128,14 @@
 	animation: fadeIn 4s ease-out forwards;
 }
 
+.submitButton{ 
+	--bs-btn-padding-y: .25rem; 
+	--bs-btn-padding-x: .5rem;  
+	--bs-btn-font-size: .75rem;
+	padding: 10px;
+}
 
+ 
 
 @media(min-width:0px){ 
  
@@ -90,13 +144,12 @@
 		left: 20px;
 	}
 	.main_bg {
-		margin-left: -50px;
-		height: 500px;
+		margin-left: 0px;
+		height: 300px;
 	}
 	.masthead{
 		padding-bottom: 25px;
-	}
-	 
+	} 
 }
  
 @media(min-width:576px){ 
@@ -107,7 +160,7 @@
 	}
 	.main_bg {
 		margin-left: 0px;
-		height: 600px;
+		height: 576px;
 	}
 
 	.masthead{
@@ -164,6 +217,7 @@
 }
 
 .effect {
+	font-family: sans-serif; 
 	animation: fall 1s cubic-bezier(0.3, 1.5, 0.3, 1) forwards
 } 
 
@@ -196,7 +250,8 @@
 .allocation_distribution-video {
 	position: static; 
 	width: 100%;
-	background-image: url(./assets/img/token_distribution.png);
+	background-image: url(../assets/img/token_distribution.png);
+	background-size: cover;
 }
   
 
@@ -204,9 +259,7 @@
 	color: #cecece;
 }
 
-.submitButton{
-	margin-right: 5px;
-}
+
 
 .faq-section{
 	padding: 10rem 0;
@@ -219,6 +272,10 @@
 
 .pull-right{
 	float: right;
+}
+
+.icon_img{
+	width: 16px;
 }
 
 .sns_icon{
@@ -306,8 +363,6 @@
 .bottom-text{
 	top: calc(80% - 80px);
 }
-
-
 
 
 @keyframes blink {
