@@ -2,7 +2,7 @@ let frame = 0;
 let interval;
 let txtIdx = 0;
 const word = ["THE", "PEOPLE", "WIN"];
-const description = "He is..... right, right and only right.\nWe pay tribute to him";
+const description = "하나로 뭉쳐 승리를 만듭시다.\n국민이 이깁니다.";
 
 
 $(document).ready(function(){
