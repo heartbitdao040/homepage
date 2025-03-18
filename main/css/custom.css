@@ -228,6 +228,7 @@ h4, .h4{
 .about-section, .allocation-section, .projects-section{
 	padding: 5rem 0;
 	background: #a16468;
+	z-index: 2;
 }
 
 
@@ -257,8 +258,10 @@ h4, .h4{
 .allocation_distribution-video {
 	position: static; 
 	width: 100%;
-	background-image: url(../assets/img/token_distribution.png);
-	background-size: cover;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	 
 }
   
 
@@ -296,7 +299,7 @@ h4, .h4{
 	 top: 0px;
 	 left: 0px;
 	 z-index: 1;
-	 margin-bottom: 10px;
+	 margin-bottom: 20px;
 }
 
 
@@ -370,7 +373,16 @@ h4, .h4{
 .imgcoin{
 	width: 306px;
 	border-radius: 50%;
-	border: 10px solid #a67c00;
+	border: 2px solid #a67c00;
+} 
+
+.img_xs{
+	width: 100px;
+	height: 100px;
+} 
+
+.img_arrow_xs{
+	width: 60px;
 } 
 
 .img-text{

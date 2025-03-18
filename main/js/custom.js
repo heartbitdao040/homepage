@@ -2,7 +2,7 @@ let frame = 0;
 let interval;
 let txtIdx = 0;
 const word = ["THE", "PEOPLE", "WIN"];
-const description = "Let's unite as one to achieve victory.\nThe people win.\n[ 국민이 이깁니다 ]";
+const description = "Let's unite as one to achieve victory.\nThe people win.\n: 국민이 이깁니다.";
 
 
 $(document).ready(function(){
@@ -74,7 +74,7 @@ function animation(){
 			let letter = "<div class=\"letter\" ><div class=\"tying\" ></div><div class=\"blink\" >|</div></div>";
 			$(".text-container").append(letter);
 			typing();
-		}, 4000)
+		}, 1000)
 		clearInterval(interval);
 		return;
 	}
