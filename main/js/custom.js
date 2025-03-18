@@ -9,7 +9,6 @@ $(document).ready(function(){
 	interval = setInterval(function(){
 		animation();
 	}, 1000);
-
 	/*
 	const ctx = document.getElementById('allocate');
 
@@ -20,6 +19,34 @@ $(document).ready(function(){
 	);
 	*/
 });
+
+
+var isVisible = false;
+
+$(window).on('scroll',function() {
+    if (checkVisible($('#allocation'))&&!isVisible) {
+		const video = document.querySelector('#allocation-video');
+		video.play();
+        isVisible=true;
+    }
+
+	if(!checkVisible($('#allocation'))){
+		const video = document.querySelector('#allocation-video');
+		video.pause();
+		isVisible=false;
+	}
+});
+
+function checkVisible( elm, eval ) {
+    eval = eval || "object visible";
+    var viewportHeight = $(window).height(), // Viewport Height
+        scrolltop = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top,
+        elementHeight = $(elm).height();   
+    
+    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+}
 
 /*
 const data = {
