@@ -126,7 +126,7 @@ function typing(){
 	  if (txtIdx > description.length) {
 		 txtIdx = 0;
 	  }else{
-		 setTimeout(typing, 100)
+		 setTimeout(typing, 50)
 	  }
 }
 	
