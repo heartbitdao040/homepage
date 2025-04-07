@@ -1,5 +1,9 @@
 @charset "UTF-8";
  
+#root {
+	touch-action: pan-y;
+}
+
 .body {
 	font-size: 1rem;
     line-height: 1.5rem;
@@ -110,6 +114,12 @@ h4, .h4{
 	word-wrap: break-word;
 	white-space: pre-wrap;
 }
+
+.accordion-body a{
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
 .blink{
 	animation: blink 1s infinite;
 	display:inline; 
