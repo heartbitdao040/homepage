@@ -2,7 +2,7 @@ let frame = 0;
 let interval;
 let txtIdx = 0;
 const word = ["THE", "PEOPLE", "WIN"];
-const description = "Let's unite as one to achieve victory.\nThe people win.\n: 국민이 이깁니다.";
+const description = "Let's unite as one to achieve victory\nThe people win\n: 국민이 이깁니다";
 
 
 $(document).ready(function(){
@@ -76,8 +76,7 @@ function goto(link){
 }
 
 function clipboardCopy(){
-	const copy = $("#Solana_Contract_Address").val(); 
-
+	const copy = $(".fs-copyclip_text").text(); 
 	window.navigator.clipboard.writeText(copy).then(() => { 
 		alert("Token address copied to clipboard!");
   	});
