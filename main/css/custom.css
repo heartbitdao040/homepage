@@ -1,8 +1,5 @@
 @charset "UTF-8";
  
-
- 
-
 .body {
 	font-size: 1rem;
     line-height: 1.5rem;
@@ -332,11 +329,12 @@ h4, .h4{
 	 left: 0px;
 	 z-index: 1;
 	 margin-bottom: 20px;
+	 font-size: 1.5em;
 }
 
 
 .sns_icon{
-	margin-right: 3px;
+	margin-right: 5px;
 }
 
 
