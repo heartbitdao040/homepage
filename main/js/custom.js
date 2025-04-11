@@ -9,15 +9,7 @@ $(document).ready(function(){
 	interval = setInterval(function(){
 		animation();
 	}, 1000);
-	/*
-	const ctx = document.getElementById('allocate');
-
-	new Chart(ctx, {
-		type: 'pie',
-		data: data,
-	  },
-	);
-	*/
+	 
 });
 
 
@@ -48,27 +40,6 @@ function checkVisible( elm, eval ) {
     if (eval == "above") return ((y < (viewportHeight + scrolltop)));
 }
 
-/*
-const data = {
-	labels: [
-	  'DAO',
-	  'Team',
-	  'Marketing',
-	  'public'
-	],
-	datasets: [{
-	  data: [70, 10, 10, 10],
-	  backgroundColor: [
-		'rgb(255, 99, 132)',
-		'rgb(54, 162, 235)',
-		'rgb(255, 205, 86)',
-		'rgb(99, 205, 86)'
-	  ],
-	  hoverOffset: 4
-	}]
-};
-*/
-
 
 function goto(link){
 	window.open(link);
@@ -81,10 +52,6 @@ function clipboardCopy(){
 		alert("Token address copied to clipboard!");
   	});
 }
-
-
-
- 
 
 function animation(){
 
@@ -100,6 +67,7 @@ function animation(){
 			let letter = "<div class=\"letter\" ><div class=\"tying\" ></div><div class=\"blink\" >|</div></div>";
 			$(".text-container").append(letter);
 			typing();
+			//popupOpen();
 		}, 1000)
 		clearInterval(interval);
 		return;
@@ -128,4 +96,17 @@ function typing(){
 		 setTimeout(typing, 50)
 	  }
 }
+
+
+function popupOpen() {
+	$('#mask').fadeTo("slow", 0.5);
+	$('#layerbox').fadeIn(1000);
+}
+
+function popupClose() {
+	$('#layerbox').hide();
+	$('#mask').hide();
+}
+
+
 	
