@@ -67,7 +67,7 @@ function animation(){
 			let letter = "<div class=\"letter\" ><div class=\"tying\" ></div><div class=\"blink\" >|</div></div>";
 			$(".text-container").append(letter);
 			typing();
-			//popupOpen();
+			
 		}, 1000)
 		clearInterval(interval);
 		return;
@@ -90,8 +90,12 @@ function typing(){
 	  var html = $(".tying").html(); 
 	  html += ( txt == "\n" ? "<br/>": txt);
 	  $(".tying").html(html); 
+
 	  if (txtIdx > description.length) {
-		 txtIdx = 0;
+		 txtIdx = 0; 
+	  }else if(txtIdx == description.length){
+		popupOpen();
+		//console.log("DONE");
 	  }else{
 		 setTimeout(typing, 50)
 	  }
