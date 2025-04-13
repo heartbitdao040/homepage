@@ -94,7 +94,7 @@ function typing(){
 	  if (txtIdx > description.length) {
 		 txtIdx = 0; 
 	  }else if(txtIdx == description.length){
-		popupOpen();
+		//popupOpen();
 		//console.log("DONE");
 	  }else{
 		 setTimeout(typing, 50)
