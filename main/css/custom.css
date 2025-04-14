@@ -510,7 +510,7 @@ h4, .h4{
 }
 
 .layerpop_area .layerbox_content {
-    width: 96%;    
+    max-width: 100%;
     margin-top:0px;
 	text-align: center;
     color: #fff;
